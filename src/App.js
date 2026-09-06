@@ -5,10 +5,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-          Hello, World!
-          842304
-      </h1>
+        <h1>{count}</h1>
+        <h2>767676767</h2>
+        <button onClick={() => setCount(count + 1)}>+1</button>
+        <button onClick={() => setCount(count - 1)}>-1</button>
     </div>
   );
 }
