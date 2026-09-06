@@ -1,10 +1,7 @@
 import React, {useRef, useState} from 'react';
-import ClassCounter from "./components/ClassCounter";
-import PostItem from "./components/PostItem";
 import "./styles/App.css"
 import Posts from "./components/Posts";
 import Form from "./components/Form";
-import Select from "./components/ui/Select/Select";
 
 export interface post {
   id : number,
