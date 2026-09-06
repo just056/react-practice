@@ -12,13 +12,20 @@ const Form = (props: props) => {
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
 
-    const tryCreatePost = (e: MouseEvent) => {
+    const tryCreatePost = (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (title === "" || desc === "") return
         e.preventDefault();
+
         const post = {
             id: Date.now(),
             title : title,
             body : desc,
         }
+
+        setTitle("")
+        setDesc("")
+
+        createPost(post);
     }
 
     return (
@@ -27,12 +34,14 @@ const Form = (props: props) => {
             <Input
                 type="text"
                 placeholder="Name"
+
                 value={title}
                 onChange={e => setTitle(e.target.value)}>
             </Input>
             <Input
                 type="text"
                 placeholder="Description"
+
                 value={desc}
                 onChange={e => setDesc(e.target.value)}>
 

@@ -1,12 +1,9 @@
 import React from 'react';
 import classes from "./Input.module.css";
 
-type props = {
+interface props extends React.HTMLProps<HTMLInputElement> {
     type: string;
     placeholder: string;
-
-    value?: string;
-    onChange?: (e: any) => void;
 }
 
 const Input = (props: props) => {

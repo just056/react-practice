@@ -1,8 +1,8 @@
 import React, {ReactNode} from 'react';
 import classes from "./Button.module.css";
 
-type props = {
-    children: ReactNode
+interface props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    children: ReactNode,
 }
 
 const Button = ({children, ...props} : props) => {

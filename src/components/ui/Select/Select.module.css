@@ -1,0 +1,11 @@
+.select, .select::picker(select) {
+    appearance: base-select;
+
+    font-size: 12px;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: white;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    max-width: 200px;
+}
