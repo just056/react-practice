@@ -1,0 +1,46 @@
+:root {
+    --border: 1px solid #b9c2ff;
+    --border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    max-width: 200px;
+}
